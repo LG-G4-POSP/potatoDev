@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="calroth"
+    <remote  name="calroth"
            fetch="https://github.com/calroth/"
            revision="android-9.0" />
 
+    <!-- REMOVALS (must be at TOP)
+    #####################################################-->
+    <remove-project path="vendor/lge" name="proprietary_vendor_lge" remote="LG-G4-POSP" />
+    <remove-project path="device/lge/g4-common" name="android_device_lge_g4-common" remote="LG-G4-POSP" />
+
+
+    <project path="vendor/lge" name="proprietary_vendor_lge" remote="calroth" revision="android-9.0" />
+    <project name="android_device_lge_g4-common" path="device/lge/g4-common" remote="LG-G4-POSP" revision="potato9_testing" />
 
 
 </manifest>
