@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="calroth"
+           fetch="https://github.com/calroth/"
+           revision="android-9.0" />
+
+
+
+</manifest>
